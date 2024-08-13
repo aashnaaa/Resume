@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <form action="submit_form.php" method="post">
+    </form><table border="2" align="center" cellpadding="10">
+        <tr>
+            <td colspan="2" align="center">
+                <img src="WhatsApp_Image_2024-03-14_at_16.46.03_5ca2a3ba-removebg-preview.png" alt="Institute Logo" width="220" height="100"><br>
+                <h1>Noida Institute of Engineering & Technology</h1>
+                <h3>Plot 19, Knowledge Park III, Greater Noida</h3>
+                <h2> Student Admission Form</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="name">Name:</label>
+            </td>
+            <td>
+                <input type="text" id="name" name="name" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="dob">Date of Birth:</label>
+            </td>
+            <td>
+                <input type="date" id="dob" name="dob" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <label for="gender">Gender:</label>
+            </td>
+            <td>
+              <input type="radio" name="gender" value="male" required> Male<br>
+              <input type="radio" name="gender" value="female"> Female<br>
+              <input type="radio" name="gender" value="other"> Other<br>
+            </td>
+          </tr>
+        <tr>
+            <td>
+                <label for="email">Email:</label>
+            </td>
+            <td>
+                <input type="email" id="email" name="email" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="phone">Phone No.:</label>
+            </td>
+            <td>
+                <input type="tel" id="phone" name="phone" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tenth">10th Percentage:</label>
+            </td>
+            <td>
+                <input type="number" id="tenth" name="tenth" required step="0.01" min="0" max="100"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tenth_board">10th Board:</label>
+            </td>
+            <td>
+                <input type="text" id="tenth_board" name="tenth_board" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tenth_year">10th Passing Year:</label>
+            </td>
+            <td>
+                <input type="number" id="tenth_year" name="tenth_year" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="twelfth">12th Percentage:</label>
+            </td>
+            <td>
+                <input type="number" id="twelfth" name="twelfth" required step="0.01" min="0" max="100"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="twelfth_board">12th Board:</label>
+            </td>
+            <td>
+                <input type="text" id="twelfth_board" name="twelfth_board" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="twelfth_year">12th Passing Year:</label>
+            </td>
+            <td>
+                <input type="number" id="twelfth_year" name="twelfth_year" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                12th Stream:
+            </td>
+            <td>
+                <input type="checkbox" name="Physics" value="on"> Physics
+                <input type="checkbox" name="Chemistry" value="on"> Chemistry
+                <input type="checkbox" name="Maths" value="on"> Maths
+                <br>
+                <input type="checkbox" name="Biology" value="on"> Biology
+                <br>
+                <input type="checkbox" name="Commerce" value="on"> Commerce
+                <br>
+                <input type="checkbox" name="Humanities" value="on"> Humanities
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="course">Desired Course:</label>
+            </td>
+            <td>
+                <select id="course" name="course" required>
+                    <optgroup label="Select Course">
+                        <option value="">Select Course</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="BBA+MBA">BBA+MBA</option>
+                        <option value="B.Tech+M.Tech">B.Tech+M.Tech</option>
+                    </optgroup>
+                </select><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="branch">Desired Branch:</label>
+            </td>
+            <td>
+                <select id="branch" name="branch" required>
+                    <optgroup label="Select Branch">
+                        <option value="">Select Branch</option>
+                        <option value="CSBS">CSBS</option>
+                        <option value="CSDS">CSDS</option>
+                        <option value="AIML">AIML</option>
+                        <option value="CSE">CSE</option>
+                        <option value="IOT">IOT</option>
+                    </optgroup>
+                </select><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
