@@ -6,54 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aashna's Resume</title>
     <style>
-        footer{
-            font-family: Arial, sans-serif;
-            color: #f9e4e4;
-            text-align: center;
-        }
-
         body {
             font-family: Arial, sans-serif;
             line-height: 1;
             background-color: #db0000;
             padding: 20px;
-            margin: 0; 
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-            vertical-align: top;
-        }
-        th{
-            background-color: #db0000;
-            font-weight: 900;
-            font-size: large;
-            color: #f9e4e4;
-            text-align: center;
-        }
-
-        .circle {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            overflow: hidden;
-            align-self: center;
-
-        }
-
-        .circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            justify-content: center;
-            align-items: center;
+            margin: 0;
         }
 
         .container {
@@ -70,48 +28,156 @@
             margin-bottom: 20px;
         }
 
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1, h2, h3 {
+            color: #db0000;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #db0000;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #db0000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .skills, .education, .co-curricular {
+            margin-bottom: 20px;
+        }
+
+        .scrollable-table {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 600px; /* Adjust this value as needed */
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #db0000;
+            font-weight: 900;
+            font-size: large;
+            color: #f9e4e4;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #edabab;
+        }
+
         .contact-info {
             text-align: center;
             margin-bottom: 20px;
         }
 
-        .contact-info p {
-            margin: 5px 0;
+        footer {
+            font-family: Arial, sans-serif;
+            color: #f9e4e4;
+            text-align: center;
+            margin-top: 20px;
         }
 
-        .skills {
-            margin-bottom: 20px;
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1, h2, h3 {
+                font-size: 1.5em;
+            }
+
+            .skills, .education, .co-curricular {
+                margin-bottom: 10px;
+            }
+
+            .scrollable-table table {
+                min-width: 100%; /* Adjust for smaller screens */
+            }
+
+            .image-container {
+                margin-bottom: 10px;
+            }
         }
 
-        .education {
-            margin-bottom: 20px;
-        }
+        @media print {
+            body {
+                background-color: #fff;
+                color: #000;
+            }
 
-        .education p,
-        .education ul {
-            margin: 5px 0;
-            display: inline-block;
-        }
+            .container {
+                box-shadow: none;
+            }
 
-        .image-container {
-            position: center;
-            top: 30px;
-            left: 50%;
-            justify-content: center;
-            align-items: center;
-            transform: translateX(42.5%);
-        }
+            a {
+                color: #000;
+                text-decoration: none;
+            }
 
-        .social-media {
-            display: flex;
-        }
+            .scrollable-table {
+                overflow: visible;
+            }
 
-        .social-media a {
-            margin-right: 10px;
-        }
+            .circle img {
+                display: none; /* Hide image when printing to save ink */
+            }
 
-        tr:hover {background-color: #edabab;}
-    
+            footer {
+                display: none; /* Hide footer when printing */
+            }
+        }
     </style>
 </head>
 
@@ -121,126 +187,103 @@
             <h1>Resume</h1>
             <hr>
             <div class="image-container">
-             <div class="circle img">
-             <img src="IMG_4629.JPG" alt="Image">
-             </div>
+                <div class="circle">
+                    <img src="IMG_4629.JPG" alt="Image">
+                </div>
             </div>
-            <h2>Aashna</h2>
-            <h3>Aspiring Software Developer</h3>
+            <h1>Aashna</h1>
+            <h4>Aspiring Software Developer</h4>
             <p>Curious, enthusiastic, and dedicated aspiring software developer seeking opportunities to leverage skills in development, graphic designing, and programming to contribute effectively to a dynamic tech environment.</p>
-
         </div>
 
         <div class="contact-info">
-            <p>Email: <a href="mailto:annaliftz6@gmail.com">annaliftz6@gmail.com</a> | Contact No: 7011882048</p>
+            <p><b>Email:</b> <a href="mailto:annaliftz6@gmail.com">annaliftz6@gmail.com</a> | <b>Contact No:</b> 7011882048</p>
             <hr>
         </div>
 
         <div class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Front End Web Development: HTML, CSS, JavaScript, ReactJS</li> <br>
-                <li>Graphics & UI Designing: Canva, Figma</li> <br>
-                <li>Machine Learning & Deep Learning: CNN, VGG16, VGG19</li> <br>
-                <li>Database Management Systems: MySQL, PostgreSQL</li> <br>
-                <li>Programming Languages: Python (Intermediate), Java, C++ (Beginner)</li> <br>
-                <li>Version Control: Git, GitBash, GitHub </li> <br>
-                <li>Additional: MS Office (Word, Excel, PowerPoint), Design Thinking </li>
+                <li><b>Front End Web Development:</b> HTML, CSS, JavaScript, ReactJS</li>
+                <li><b>Graphics & UI Designing:</b> Canva, Figma</li>
+                <li><b>Machine Learning & Deep Learning:</b> CNN, VGG16, VGG19</li>
+                <li><b>Database Management Systems:</b> MySQL, PostgreSQL</li>
+                <li><b>Programming Languages:</b> Python (Intermediate), Java, C++ (Beginner)</li>
+                <li><b>Version Control:</b> Git, GitBash, GitHub </li>
+                <li><b>Additional:</b> MS Office (Word, Excel, PowerPoint), Design Thinking </li>
             </ul>
             <hr>
         </div>
 
         <h2>Projects</h2>
-            <ul>
-                <li>Frontend Development;
-                <br>
-                <p>HTML, CSS & JS: <a href="NIET Admission Form.html" target="_blank">Registration Form </a>, <a href="ebsindex.html" target="_blank">E-Book Store</a>, <a href="https://aashnaaa.github.io/GD-Portfolio/" target="_blank">Graphic Design Portfolio</a>, <a href="calc_index.html" target="_blank">Simple Math Calculator</a> <br>
-                ReactJS: <a href="https://github.com/aashnaaa/Weather-Forecast" target="_blank">Weather Forecast</a>, <a href="https://github.com/aashnaaa/Tic-Tac-Toe" target="_blank">Tic Tac Toe</a> </p>
-                </li>
-                <li>Machine Learning Projects: <a href="https://drive.google.com/file/d/1KMWJUkbTU69-FF4ePUAH9wApfyQRscDV/view?usp=drive_link" target="_blank">Link to ML Projects</a> 
-                    <br>
-                <p>Weapon Detection System (96% accuracy) <br> Cat/Dog Classification System (94% accuracy) </p> </li>
-                <li>Python Mini Projects: <a href="https://github.com/aashnaaa/Movie-Database-MVC" target="_blank">Movie MVC</a>, <a href="https://github.com/aashnaaa/Accounting-System-Python" target="_blank">Accounting System</a> </li>
+        <ul>
+            <li><b>Frontend Development;</b> <br>
+            <ul>HTML, CSS & JS: <a href="NIET Admission Form.html" target="_blank">Registration Form </a>, <a href="ebsindex.html" target="_blank">E-Book Store</a>, <a href="https://aashnaaa.github.io/GD-Portfolio/" target="_blank">Graphic Design Portfolio</a>, <a href="calc_index.html" target="_blank">Simple Math Calculator</a> <br>
+            ReactJS: <a href="https://github.com/aashnaaa/Weather-Forecast" target="_blank">Weather Forecast</a>, <a href="https://github.com/aashnaaa/Tic-Tac-Toe" target="_blank">Tic Tac Toe</a> </p>
             </ul>
 
-            <hr>
-       
-            <h2>Research Papers</h2>
-            <p>Agricultural Robotics & E-Business: Future of Economics (EmergIN Conference 2023) | <a href="https://drive.google.com/drive/folders/1CQO4Vp9j_GwCGYN3XcOIvraH5RtteWVN?usp=drive_link" target="_blank">Link to Research Papers</a></p>
+            <li><b>Machine Learning Projects:</b> <a href="https://drive.google.com/file/d/1KMWJUkbTU69-FF4ePUAH9wApfyQRscDV/view?usp=drive_link" target="_blank">Link to ML Projects</a> 
+            Weapon Detection System (96% accuracy) <br> Cat/Dog Classification System (94% accuracy) </p> </li>
+            
+            <li><b>Python Mini Projects:</b> <a href="https://github.com/aashnaaa/Movie-Database-MVC" target="_blank">Movie MVC</a>, <a href="https://github.com/aashnaaa/Accounting-System-Python" target="_blank">Accounting System</a> </li>
+        </ul>
+        <hr>
 
-            <hr>
+        <h2>Research Papers</h2>
+        <p>Agricultural Robotics & E-Business: Future of Economics (EmergIN Conference 2023) | <a href="https://drive.google.com/drive/folders/1CQO4Vp9j_GwCGYN3XcOIvraH5RtteWVN?usp=drive_link" target="_blank">Link to Research Papers</a></p>
+        <hr>
 
-        <div class="table">
-            <div class="th, td">
-                <h2>Cu-Curricular Activities</h2>
-
-        <table>
-
+        <h2>Co-Curricular Activities</h2>
+        <div class="scrollable-table">
+            <table>
                 <tr>
                     <th>Co-Curricular Activity</th>
                     <th>Achievement</th>
                     <th>Skill</th>
                 </tr>
-
-            <tbody>
-
                 <tr>
-                    <td> Cultural Ramp Walk </td>
-                    <td> 2nd Prize </td>
-                    <td> Theater <br>
-                        Dance </td>
+                    <td>Cultural Ramp Walk</td>
+                    <td>2nd Prize</td>
+                    <td>Theater, Dance</td>
                 </tr>
-
                 <tr>
-                    <td> Debate Competition </td>
-                    <td> 1st Prize </td>
-                    <td> Public Speaking </td>
+                    <td>Debate Competition</td>
+                    <td>1st Prize</td>
+                    <td>Public Speaking</td>
                 </tr>
-
                 <tr>
-                    <td> Dance Competition </td>
-                    <td> 1st Prize </td>
-                    <td> Dance </td>
+                    <td>Dance Competition</td>
+                    <td>1st Prize</td>
+                    <td>Dance</td>
                 </tr>
-
                 <tr>
-                    <td> Presentation Competition </td>
-                    <td> 3rd Prize </td>
-                    <td> MS Power Point <br>
-                        Public Speaking </td>
+                    <td>Presentation Competition</td>
+                    <td>3rd Prize</td>
+                    <td>MS Power Point, Public Speaking</td>
                 </tr>
-
                 <tr>
-                    <td> Bollywood Ramp Walk </td>
-                    <td> 1st Prize </td>
-                    <td> Theater <br>
-                        Dance </td>
+                    <td>Bollywood Ramp Walk</td>
+                    <td>1st Prize</td>
+                    <td>Theater, Dance</td>
                 </tr>
-
                 <tr>
-                    <td> Logo Making Competition </td>
-                    <td> 2nd Prize </td>
-                    <td> Graphic Designing </td>
+                    <td>Logo Making Competition</td>
+                    <td>2nd Prize</td>
+                    <td>Graphic Designing</td>
                 </tr>
-
                 <tr>
-                    <td> Global Design Thinking Challenge </td>
-                    <td> 1st Prize </td>
-                    <td> Python <br>
-                        Design Thinking <br>
-                        Web Development </td>
+                    <td>Global Design Thinking Challenge</td>
+                    <td>1st Prize</td>
+                    <td>Python, Design Thinking, Web Development</td>
                 </tr>
-            </tbody>
-        </table>
+            </table>
         </div>
-        </div>
-
         <hr>
 
         <div class="education">
             <h2>Education</h2>
-            <table style="width: 100%; border-collapse: collapse;">
-                <thead>
+            <div class="scrollable-table">
+                <table>
                     <tr>
                         <th style="text-align: center;">Qualification</th>
                         <th style="text-align: center;">Institute</th>
@@ -270,10 +313,11 @@
                         <td style="text-align: center;">2019</td>
                         <td style="text-align: center;">85%</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>                   
+                </table>
+            </div>
+        </div>
 
+        
         <hr>
 
         <h2>Certifications : <a href="https://drive.google.com/drive/folders/1iKF_XpZTo5gTyRIlkddWR2pcSXa47SyM?usp=sharing" target="_blank">Link to Certificates</a></h2>
@@ -291,10 +335,12 @@
         </div>
         
     </div>
-    
-    <footer>
-        <p>&copy; 2024 Annaverse by Aashna</p>
-    </footer>
 
+        <footer>
+            <p>&copy; 2024 Aashna. All rights reserved.</p>
+        </footer>
+
+    </div>
 </body>
+
 </html>
